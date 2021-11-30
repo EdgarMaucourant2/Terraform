@@ -1,7 +1,7 @@
 # virtual_machine.tf
 resource "azurerm_virtual_machine" "vm" {
   # name = "${var.prefix}-vm"
-  name                  = "${var.prefix}-tc-vm"
+  name                  = "${var.prefix}-vm"
   location              = var.location
   resource_group_name   = azurerm_resource_group.test-rg.name
   network_interface_ids = [azurerm_network_interface.nic.id]
