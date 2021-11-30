@@ -20,6 +20,6 @@ terraform {
 
 # Create a resource group
 resource "azurerm_resource_group" "test-rg" {
-  name     = "${var.prefix}-resources";
-  location = "${var.location}";
+  name     = "${var.prefix}-resources"
+  location = "${var.location}"
 }
